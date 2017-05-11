@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.test {
+	width: 400;
+	height: 400;
+	background-color: blue;
+}
+
+.sandbox {
+	/*
+	 * Using max-width in combination with the display and margin properties keeps images and video
+	 * constrained inside a container. If the container shrinks to smaller than the image width,
+	 * the image shrinks with it.
+	 */
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+
+	width: 50%;
+	height: 200px;
+	background-color: #252525;
+}
+
+.Footer {
+	bottom: 0;
+	width: 100%;
+	max-width: 1280px;
+
+	height: 20px;
+	background-color: blue;
+
+	/*
+	 * Top and bottom set to 0, left and right set to auto. If container is less than max width,
+	 * it will be centered in the viewport. If it exceeds max width, it will stay at 1280 and 
+	 * be centered in the available space.
+	 */
+	margin: 0 auto; 
+}
